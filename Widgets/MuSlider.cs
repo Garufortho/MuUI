@@ -49,14 +49,14 @@ namespace MuUI
 			RightValue = right;
 		}
 		
-		public Slider(float initialValue, float left, float right)
+		public Slider(float initialValue, float left, float right) : this()
 		{
 			SliderPositionProperty.Value = initialValue;
 			LeftValue = left;
 			RightValue = right;
 		}
 		
-		public Slider(float initialValue, float left, float right, bool horizontal)
+		public Slider(float initialValue, float left, float right, bool horizontal) : this()
 		{
 			SliderPositionProperty.Value = initialValue;
 			LeftValue = left;
