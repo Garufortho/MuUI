@@ -43,6 +43,27 @@ namespace MuUI
 			Position = position;
 		}
 		
+		public Slider(float initialValue, float right) : this()
+		{
+			SliderPositionProperty.Value = initialValue;
+			RightValue = right;
+		}
+		
+		public Slider(float initialValue, float left, float right)
+		{
+			SliderPositionProperty.Value = initialValue;
+			LeftValue = left;
+			RightValue = right;
+		}
+		
+		public Slider(float initialValue, float left, float right, bool horizontal)
+		{
+			SliderPositionProperty.Value = initialValue;
+			LeftValue = left;
+			RightValue = right;
+			Horizontal = horizontal;
+		}
+		
 		protected override GUIStyle GetDefaultStyle()
 		{
 			if (Horizontal)

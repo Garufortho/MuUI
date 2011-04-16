@@ -34,6 +34,11 @@ namespace MuUI
 			Title = title;
 		}
 		
+		public Window(Rect position, string title, bool draggable) : this(position, title)
+		{
+			AllowDrag = draggable;
+		}
+		
 		protected override GUIStyle GetDefaultStyle()
 		{
 			return Skin.window;
