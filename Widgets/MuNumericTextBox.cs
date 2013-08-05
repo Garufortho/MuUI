@@ -54,7 +54,7 @@ namespace MuUI
 		public NumericTextBox(int initialValue) : base()
 		{
 			FloatingPoint = false;
-			TextProperty.SetValueWithoutBinding("0");
+			TextProperty.SetValueWithoutBinding(initialValue.ToString());
 		}
 		
 		public NumericTextBox(float initialValue) : base()
